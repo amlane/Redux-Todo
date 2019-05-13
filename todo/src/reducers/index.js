@@ -9,7 +9,7 @@ export const reducer = (state = initialState, action) => {
         case ADD_TODO:
             return {
                 ...state,
-                movies: [...state.movies, action.payload]
+                todo: [...state.todo, action.payload]
             }
             default: 
                 return state;
