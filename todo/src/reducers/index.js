@@ -1,7 +1,7 @@
 import { ADD_TODO } from '../actions';
 
 const initialState = {
-    todos: ["eat", "pray", "love"]
+    todos: []
 }
 
 export const reducer = (state = initialState, action) => {

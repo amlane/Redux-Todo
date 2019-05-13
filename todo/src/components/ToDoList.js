@@ -12,6 +12,7 @@ class ToDoList extends React.Component {
     addToDo = e => {
         e.preventDefault();
         this.props.addTodo(this.state.newToDo);
+        this.setState({ newToDo: "" })
     }
 
     handleInputChanges = e => this.setState({ newToDo: e.target.value })
@@ -22,7 +23,7 @@ class ToDoList extends React.Component {
                 {this.props.todos.map(todo => (
                     <ToDo todo={todo} />
                 ))}
-                <input onChange={this.handleInputChanges} placeholder="add a to do" />
+                <input onChange={this.handleInputChanges} value={this.state.newToDo} placeholder="add a to do" />
                 <button onClick={this.addToDo}>Add</button>
             </div>
         )
