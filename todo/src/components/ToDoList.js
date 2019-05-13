@@ -19,12 +19,12 @@ class ToDoList extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="form-container">
                 <ul>{this.props.todos.map(todo => (
                     <ToDo key={todo} todo={todo} />
                 ))}</ul>
                 <form onSubmit={this.addToDo}>
-                <input onChange={this.handleInputChanges} value={this.state.newToDo} placeholder="add a to do" />
+                <input onChange={this.handleInputChanges} value={this.state.newToDo} placeholder="add new to do..." />
                 <button>Add</button>
                 </form>
             </div>
