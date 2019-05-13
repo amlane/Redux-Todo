@@ -23,8 +23,10 @@ class ToDoList extends React.Component {
                 {this.props.todos.map(todo => (
                     <ToDo todo={todo} />
                 ))}
+                <form onSubmit={this.addToDo}>
                 <input onChange={this.handleInputChanges} value={this.state.newToDo} placeholder="add a to do" />
-                <button onClick={this.addToDo}>Add</button>
+                <button>Add</button>
+                </form>
             </div>
         )
     }
