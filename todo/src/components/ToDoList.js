@@ -1,4 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { addTodo } from '../actions';
+
+import ToDo from './ToDo';
 
 class ToDoList extends React.Component {
     state = {
@@ -8,7 +12,9 @@ class ToDoList extends React.Component {
     render(){
         return (
             <div>
-                <h2>Here's a placeholder for my mapped todos</h2>
+                {this.props.todos.map(todo => (
+                    <ToDo todo={todo} />
+                ))}
                 <input placeholder="add a to do" />
                 <button>Add</button>
             </div>
@@ -16,6 +22,12 @@ class ToDoList extends React.Component {
     }
 };
 
-export default ToDoList;
+
+const mapStateToProps = state => {
+    return {
+        todos: state.todos
+    }
+}
+export default connect(mapStateToProps, { addTodo })(ToDoList);
 
 
