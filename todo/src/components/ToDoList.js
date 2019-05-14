@@ -30,7 +30,7 @@ class ToDoList extends React.Component {
                     <button className="add-btn">+</button>
                 </form>
                 <ul>{this.props.todos.map(todo => (
-                    <ToDo key={todo} todo={todo} toggleComplete={this.toggleComplete} />
+                    <ToDo todo={todo} toggleComplete={this.toggleComplete} />
                 ))}</ul>
             </div>
         )
