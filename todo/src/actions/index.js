@@ -13,3 +13,11 @@ export const toggleComplete = id => {
         payload: id
     }
 }
+
+export const DELETE_TODO = 'DELETE_TODO';
+export const deleteToDo = id => {
+    return {
+        type: DELETE_TODO,
+        payload: id
+    }
+}
