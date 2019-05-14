@@ -23,7 +23,7 @@ class ToDoList extends React.Component {
         this.props.toggleComplete(id);
     }
 
-    deleteToDo = (id) => {
+    deleteToDo = id => {
         this.props.deleteToDo(id)
     }
 
