@@ -1,12 +1,15 @@
-body {
+* {
   margin: 0;
-  font-family: 'Pacifico', cursive;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background:#7BC6CC;
+  width: 100vw;
 }
 
 

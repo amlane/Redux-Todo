@@ -5,8 +5,11 @@ import ToDoList from './components/ToDoList';
 
 function App() {
   return (
-    <div className="App glowing">
-      <h1>To Do App</h1>
+    <div className="App">
+    <header className="header">
+      <h1>TO DO</h1>
+      <p> The Remindery App</p>
+    </header>
       <ToDoList />
     </div>
   );
