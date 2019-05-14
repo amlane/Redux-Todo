@@ -21,3 +21,11 @@ export const deleteToDo = id => {
         payload: id
     }
 }
+
+export const CLEAR_COMPLETED = 'CLEAR_COMPLETED';
+export const clearCompleted = id => {
+    return {
+        type: CLEAR_COMPLETED,
+        payload: id
+    }
+}
