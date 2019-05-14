@@ -83,15 +83,18 @@ li {
   color: #FFB400;
   background: #FAFAFA;
   border: none;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 120px;
   border-radius: 3px;
   text-align: center;
-  align-self: center;
+  position: fixed;
+  top: 632px;
+  left: 130px;
 }
 
 .completed {
   text-decoration: line-through;
+  background: #01C7F8;
 }
 
 button:focus,
