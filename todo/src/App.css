@@ -8,14 +8,14 @@
 }
 
 .header {
-  background: linear-gradient(#5E30B7, rgb(124, 65, 235));
+  background: linear-gradient(#5E30B7, rgb(143, 98, 228));
   height: 37%;
 }
 
 h1 {
   font-family: 'Archivo Black', sans-serif;
   font-size: 4rem;
-  color: #FAFAFA;
+  color: #01C7F8;
   text-align: center;
   margin-top: 10vh;
 }
@@ -83,6 +83,14 @@ li {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+.dlt-btn {
+  color: #FAFAFA;
+  background: #01C7F8;
+  border: none;
+  height: 20px;
+  width: 20px;
 }
 
 button:focus,

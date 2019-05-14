@@ -11,6 +11,7 @@ class ToDoList extends React.Component {
 
     addToDo = e => {
         e.preventDefault();
+        if(!this.state.newToDo) return;
         this.props.addTodo(this.state.newToDo);
         this.setState({ newToDo: "" })
     }
