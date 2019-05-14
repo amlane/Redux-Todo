@@ -9,7 +9,7 @@ export default props => {
             className={props.todo.completed ? 'completed' : '' }
             >
             {props.todo.value} 
-            {/* <button className="dlt-btn">x</button> */}
+            <button className="dlt-btn">x</button>
             </li>
         </>
     )

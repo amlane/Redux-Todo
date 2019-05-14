@@ -79,7 +79,7 @@ li {
   margin: 18px 15px;
 }
 
-.dlt-btn {
+.clr-btn {
   color: #FFB400;
   background: #FAFAFA;
   border: none;
@@ -90,6 +90,17 @@ li {
   position: fixed;
   top: 632px;
   left: 130px;
+}
+
+.dlt-btn {
+  color: #FFB400;
+  background: #FAFAFA;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  text-align: center;
+  border: none;
+  align-self: center;
 }
 
 .completed {

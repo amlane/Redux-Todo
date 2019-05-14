@@ -13,7 +13,7 @@ class ToDoList extends React.Component {
 
     addToDo = e => {
         e.preventDefault();
-        if(!this.state.newToDo || this.props.todos.length > 4) return;
+        if(!this.state.newToDo || this.props.todos.length > 10) return;
 
         this.props.addTodo(this.state.newToDo);
         this.setState({ newToDo: "" })
@@ -23,6 +23,7 @@ class ToDoList extends React.Component {
         this.props.toggleComplete(id);
     }
 
+    
 
     render(){
         return (
@@ -34,7 +35,7 @@ class ToDoList extends React.Component {
                 <ul>{this.props.todos && this.props.todos.map(todo => (
                     <ToDo todo={todo} toggleComplete={this.toggleComplete} />
                 ))}</ul>
-                <button className="dlt-btn">clear completed</button>
+                <button className="clr-btn">clear completed</button>
             </div>
         )
     }
