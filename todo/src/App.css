@@ -90,8 +90,8 @@ li {
   align-self: center;
 }
 
-.fa-check-square {
-  color: #FAFAFA;
+.completed {
+  text-decoration: line-through;
 }
 
 button:focus,

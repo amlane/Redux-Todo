@@ -5,8 +5,9 @@ export default props => {
     return (
         <>
             <li 
-            onClick={() => props.toggleComplete(props.todo.id)}>
-            {props.todo.completed && <i className="far fa-check-square" />}
+            onClick={() => props.toggleComplete(props.todo.id)}
+            className={props.todo.completed ? 'completed' : '' }
+            >
             {props.todo.value} 
             <button className="dlt-btn">x</button>
             </li>
