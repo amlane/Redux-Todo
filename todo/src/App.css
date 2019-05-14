@@ -90,6 +90,10 @@ li {
   align-self: center;
 }
 
+.fa-check-square {
+  color: #FAFAFA;
+}
+
 button:focus,
 input:focus {
   outline: none;

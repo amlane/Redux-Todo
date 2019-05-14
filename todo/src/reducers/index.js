@@ -28,6 +28,7 @@ export const reducer = (state = initialState, action) => {
                         completed: !todo.completed
                     }
                 }
+                return todo;
             } )
         }
         

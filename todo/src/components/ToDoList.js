@@ -29,7 +29,7 @@ class ToDoList extends React.Component {
                     <input onChange={this.handleInputChanges} value={this.state.newToDo} placeholder="What do you need to do today?" />
                     <button className="add-btn">+</button>
                 </form>
-                <ul>{this.props.todos.map(todo => (
+                <ul>{this.props.todos && this.props.todos.map(todo => (
                     <ToDo todo={todo} toggleComplete={this.toggleComplete} />
                 ))}</ul>
             </div>
