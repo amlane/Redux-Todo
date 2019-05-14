@@ -1,7 +1,10 @@
-import { ADD_TODO } from '../actions';
+import { ADD_TODO, TOGGLE_COMPLETE } from '../actions';
 
 const initialState = {
-    todos: []
+    todos: [
+       { value: '', id: '', completed: false }
+    ],
+
 }
 
 export const reducer = (state = initialState, action) => {
@@ -9,9 +12,26 @@ export const reducer = (state = initialState, action) => {
         case ADD_TODO:
             return {
                 ...state,
-                todos: [...state.todos, action.payload]
+                todos: [
+                    ...state.todos, 
+                    { value: action.payload, id: Date.now(), completed: false } 
+                ]
             }
-            default: 
+
+        case TOGGLE_COMPLETE:
+        return {
+            ...state,
+            todos: state.todos.map( todo => {
+                if(todo.id === action.payload){
+                    return {
+                        ...todo,
+                        completed: !todo.completed
+                    }
+                }
+            } )
+        }
+        
+              default: 
                 return state;
     }
 }

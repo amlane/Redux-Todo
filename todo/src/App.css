@@ -81,12 +81,13 @@ li {
 
 .dlt-btn {
   color: #FFB400;
-  background: ##FAFAFA;
+  background: #FAFAFA;
   border: none;
   height: 20px;
   width: 20px;
   border-radius: 3px;
   text-align: center;
+  align-self: center;
 }
 
 button:focus,
