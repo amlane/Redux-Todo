@@ -2,7 +2,7 @@ import { ADD_TODO, TOGGLE_COMPLETE } from '../actions';
 
 const initialState = {
     todos: [
-       { value: '', id: '', completed: false }
+       { value: 'make to do list', id: '1', completed: false }
     ],
 
 }
