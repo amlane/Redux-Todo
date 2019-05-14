@@ -38,7 +38,8 @@ form {
 input {
   height: 40px;
   width: 80%;
-  margin-top: 10px;
+  max-width: 350px;
+  margin-top: 20px;
   margin-left: 15px;
   border: none;
   font-family: 'Roboto', sans-serif;
@@ -49,20 +50,13 @@ input {
 ul {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-}
-
-@media (min-width: 600px){
-  ul {
-    align-items: center;
-  }
-
+  align-items: center;
 }
 
 li {
   background: #FFB400;
   color: #FAFAFA;
-  margin: 15px;
+  margin: 5px;
   padding: 16px;
   border-radius: 8px;
   width: 92%;
@@ -76,21 +70,23 @@ li {
   background: #FF3285;
   border: none;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   font-size: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 18px 15px;
 }
 
 .dlt-btn {
-  color: #FAFAFA;
-  background: #01C7F8;
+  color: #FFB400;
+  background: ##FAFAFA;
   border: none;
   height: 20px;
   width: 20px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 button:focus,
