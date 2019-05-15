@@ -14,8 +14,8 @@ class ToDoList extends React.Component {
     addToDo = e => {
         e.preventDefault();
         if(!this.state.newToDo || this.props.todos.length > 10) return;
-
         this.props.addTodo(this.state.newToDo);
+        localStorage.setItem(this.state.newToDo, this.state.newToDo);
         this.setState({ newToDo: "" })
     }
 

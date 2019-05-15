@@ -108,18 +108,18 @@ li {
   background: #01C7F8;
 }
 
+button:hover, 
+li:hover {
+  cursor: pointer;
+}
+
 button:focus,
 input:focus {
   outline: none;
 }
 
-@media (min-width: 600px){
+@media (min-width: 370px){
   li {
     max-width: 410px;
-  }
-
-  .clr-btn {
-    left: 45%;
-    top: 90%;
   }
 }
