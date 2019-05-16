@@ -88,8 +88,8 @@ li {
   border-radius: 3px;
   text-align: center;
   position: fixed;
-  top: 630px;
-  left: 130px;
+  top: 90%;
+  left: 35%;
 }
 
 .dlt-btn {
@@ -118,26 +118,3 @@ input:focus {
   outline: none;
 }
 
-@media (min-width: 380px){
-  li {
-    max-width: 410px;
-  }
-
-  .clr-btn{
-    top: 93%;
-    left: 30%;
-    width: 200px;
-  }
-}
-
-@media (min-width: 600px){
-  .clr-btn {
-    left: 40%;
-  }
-}
-
-@media (min-width: 800px){
-  .clr-btn {
-    left: 45%;
-  }
-}
