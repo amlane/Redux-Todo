@@ -15,7 +15,7 @@ class ToDoList extends React.Component {
         e.preventDefault();
         if(!this.state.newToDo || this.props.todos.length > 10) return;
         this.props.addTodo(this.state.newToDo);
-        localStorage.setItem(this.state.newToDo, this.state.newToDo);
+        // localStorage.setItem(this.state.newToDo, this.state.newToDo);
         this.setState({ newToDo: "" })
     }
 
@@ -48,7 +48,9 @@ class ToDoList extends React.Component {
                     deleteToDo={this.deleteToDo}
                     />
                 ))}</ul>
-                <button onClick={this.clearCompleted} className="clr-btn">clear completed</button>
+                <div className="">
+                  <button onClick={this.clearCompleted} className="clr-btn">clear completed</button>
+                </div>
             </div>
         )
     }

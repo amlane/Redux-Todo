@@ -118,8 +118,26 @@ input:focus {
   outline: none;
 }
 
-@media (min-width: 370px){
+@media (min-width: 380px){
   li {
     max-width: 410px;
+  }
+
+  .clr-btn{
+    top: 93%;
+    left: 30%;
+    width: 200px;
+  }
+}
+
+@media (min-width: 600px){
+  .clr-btn {
+    left: 40%;
+  }
+}
+
+@media (min-width: 800px){
+  .clr-btn {
+    left: 45%;
   }
 }
