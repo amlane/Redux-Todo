@@ -68,13 +68,14 @@ li {
 .add-btn {
   color: #FAFAFA;
   background: #FF3285;
-  border: none;
+  border: 1px solid #FF3285;
   border-radius: 50%;
   height: 50px;
   width: 55px;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 15px 15px;
 }
 
