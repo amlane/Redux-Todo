@@ -70,13 +70,13 @@ li {
   background: #FF3285;
   border: none;
   border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  font-size: 2.2rem;
+  height: 50px;
+  width: 55px;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 18px 15px;
+  margin: 15px 15px;
 }
 
 .clr-btn {
@@ -89,7 +89,7 @@ li {
   text-align: center;
   position: fixed;
   top: 90%;
-  left: 35%;
+  left: 32%;
 }
 
 .dlt-btn {
